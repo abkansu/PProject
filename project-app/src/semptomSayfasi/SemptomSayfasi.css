@@ -1,0 +1,56 @@
+.SemptomSayfasi{
+    height: 70%;
+    width: 70%;
+    background-color: #DBE2EF;
+    display: flex;
+    justify-content: center;
+    border-radius: 10px;
+}
+
+.SearchBar {
+    margin-top: 2%;
+    width: 80%;
+    height: 70%;
+}
+
+.InputBox{
+    width: 98%;
+    height: 30px;
+    border: 2px solid black;
+    border-radius: 10px;
+    font: 16px "Helvetica", "Arial", "sans-serif";
+}
+
+.Semptomlar{
+    margin-top: 2%;
+    height: 100%;
+    width: 100%;
+    background-color: #DBE2EF;
+    border-radius: 10px;
+    overflow-y: scroll;
+    overflow-x: visible;
+}
+
+.Button{
+    color: #112D4E;
+    background-color: #3F72AF;
+    border: 2px solid #112D4E;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 1em;
+    width: 50%;
+    margin-top: 2%;
+    margin-left: 25%;
+}
+
+.Semptom{
+    height: 10%;
+    width: 98%;
+    background-color: #F9F7F7;
+    margin-top: 1%;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    border-width: 5px ;
+    border-style: groove;
+}
