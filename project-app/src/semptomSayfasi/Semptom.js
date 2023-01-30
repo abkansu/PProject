@@ -1,11 +1,15 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import "./SemptomSayfasi.css"
 
 const Semptom = (props) => {
     let semptomIsmi = props.semptomIsmi
+    let onClick = props.onClick
+    let isSelected = props.isSelected
+
+    
     return (
-    <div className="Semptom">
-        <div style={{color: "#112D4E", marginLeft: "1%"}}>{semptomIsmi}</div>
+    <div className={isSelected ? "SemptomSelected" :"Semptom"} onClick={onClick}>
+        {semptomIsmi}
     </div>
     );
 }
