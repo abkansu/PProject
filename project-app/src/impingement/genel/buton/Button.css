@@ -1,0 +1,10 @@
+.Buton{
+    border-width: 2px;
+    border-style: solid;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 1em;
+    width: 50%;
+    margin-top: 8%;
+    margin-left: 25%;
+}

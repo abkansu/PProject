@@ -1,19 +1,10 @@
 import React from "react";
 import { ReactDOM } from "react";
-import "./GirisSayfasi.css"
+import "./GirisSayfasi.css";
+import Button from "../genel/buton/Button";
 
 
 const GirisSayfasi = () => {
-    const onHoverOver = (event) => {
-        event.target.style.backgroundColor = "#112D4E";
-        event.target.style.color = "#3F72AF";
-        event.target.style.scale = 1.1;
-    } 
-    const onHoverEnd = (event) => {
-        event.target.style.backgroundColor = "#3F72AF";
-        event.target.style.color = "#112D4E";
-        event.target.style.scale = 1.0;
-    }
     return (
     <div className="GirisSayfasi">
         <div className="Inputs">
@@ -36,7 +27,8 @@ const GirisSayfasi = () => {
                 <input type={"text"} className="InputBox"/>
             </div>
             <div className="Input">
-                <button className="Button" onMouseOver={onHoverOver} onMouseLeave={onHoverEnd}>Onayla</button>
+                <Button name="Geri Git" backgroundColor="#EED2B1" color="#C08D50" marginTop="10%" marginLeft="25%"/>
+                <Button name="Onayla" backgroundColor="#3F72AF" color="#112D4E" marginTop="2%" marginLeft="25%"/>
             </div>
         </div>
     </div>

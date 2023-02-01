@@ -1,7 +1,10 @@
 import React from "react";
 import "./AnaSayfa.css";
 import { Link } from "react-router-dom";
-
+import { TbPhysotherapist } from "react-icons/tb";
+import { MdOutlineSick } from "react-icons/md";
+import { SiWorldhealthorganization } from "react-icons/si"
+ 
 
 const AnaSayfa = () => {
     return (
@@ -10,13 +13,14 @@ const AnaSayfa = () => {
                 <div className="InfoText">
                     Fizyoterapi Öneri Programı
                 </div>
-                
             </div>
             <div className="GirisButonlari">
-                <div className="GirisButonu">
+                <div className="GirisButonuFizyoterapist">
+                    <TbPhysotherapist className="Fizyoterapist"/>
                     <Link to="/" className="LinkButonu">Fizyoterapist Giriş</Link>
                 </div>
-                <div className="GirisButonu">
+                <div className="GirisButonuHasta">
+                    <MdOutlineSick className="Hasta"/>
                     <Link to="/giris" className="LinkButonu">Hasta Giriş</Link>
                 </div>
             </div>

@@ -27,22 +27,13 @@
     border: 2px solid black;
     border-radius: 10px;
     display: block;
-    font: 16px "Helvetica", "Arial", "sans-serif";
-}
-
-.Button{
-    color: #112D4E;
-    background-color: #3F72AF;
-    border: 2px solid #112D4E;
-    border-radius: 10px;
-    cursor: pointer;
-    font-size: 1em;
-    width: 50%;
-    margin-top: 8%;
-    margin-left: 25%;
+    font: 16px 'Montserrat', sans-serif;
+    color: #3F72AF;
+    padding-left: 2%;
 }
 
 label{
     color: #112D4E;
     margin-left: 1%;
+    font-weight: bold;
 }

@@ -1,7 +1,8 @@
 import React, { useState } from "react";
 import Semptom from "./Semptom";
-import "./SemptomSayfasi.css"
-import MOCKDATA from "./MOCK_DATA.json"
+import "./SemptomSayfasi.css";
+import MOCKDATA from "./MOCK_DATA.json";
+import Button from "../genel/buton/Button";
 
 const SemptomSayfasi = () =>{
     const [ searchTerm, setSearchTerm ] = useState("");
@@ -14,16 +15,6 @@ const SemptomSayfasi = () =>{
                 return value;
             }}
         ).sort((a, b) => b[1] - a[1]));
-    }
-    const onHoverOver = (event) => {
-        event.target.style.backgroundColor = "#112D4E";
-        event.target.style.color = "#3F72AF";
-        event.target.style.scale = 1.1;
-    } 
-    const onHoverEnd = (event) => {
-        event.target.style.backgroundColor = "#3F72AF";
-        event.target.style.color = "#112D4E";
-        event.target.style.scale = 1.0;
     }
     return(
     <div className="SemptomSayfasi">
@@ -44,7 +35,9 @@ const SemptomSayfasi = () =>{
                 
             </div>
             <div>
-                <button className="Button" onMouseOver={onHoverOver} onMouseLeave={onHoverEnd}>Onayla</button>
+                <Button name="Geri Git" backgroundColor="#EED2B1" color="#C08D50" marginTop="2%" marginLeft="25%"/>
+                <Button name="Onayla" backgroundColor="#3F72AF" color="#112D4E" marginTop="1%" marginLeft="25%"/>
+                
             </div>
         </div>
         
