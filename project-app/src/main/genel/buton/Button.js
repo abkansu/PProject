@@ -2,7 +2,7 @@ import React from "react";
 import "./Button.css";
 
 const Button = (props) => {
-    const { name, backgroundColor, color, marginTop, marginLeft } = props
+    const { name, backgroundColor, color, marginTop, marginLeft, onClickFunction } = props
 
     const onHoverOver = (e) => {
         e.target.style.backgroundColor = color;
@@ -22,7 +22,8 @@ const Button = (props) => {
     return (<button className="Buton" 
             style={{backgroundColor: backgroundColor, color: color, borderColor: color, marginTop: marginTop, marginLeft: marginLeft}} 
             onMouseEnter={onHoverOver}
-            onMouseLeave={onHoverEnd}>{name}</button>
+            onMouseLeave={onHoverEnd}
+            onClick={onClickFunction}>{name}</button>
             );
 
 }

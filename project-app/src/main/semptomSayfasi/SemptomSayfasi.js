@@ -3,8 +3,10 @@ import Semptom from "./Semptom";
 import "./SemptomSayfasi.css";
 import MOCKDATA from "./MOCK_DATA.json";
 import Button from "../genel/buton/Button";
+import { useHistory } from "react-router-dom";
 
 const SemptomSayfasi = () =>{
+    const history = useHistory();
     const [ searchTerm, setSearchTerm ] = useState("");
     const [ datalist, setDatalist ] = useState(MOCKDATA.map((value, key) => {return [value.first_name, false];}));
     const onClickSemptom = (event) => {
@@ -35,8 +37,8 @@ const SemptomSayfasi = () =>{
                 
             </div>
             <div>
-                <Button name="Geri Git" backgroundColor="#EED2B1" color="#C08D50" marginTop="2%" marginLeft="25%"/>
-                <Button name="Onayla" backgroundColor="#3F72AF" color="#112D4E" marginTop="1%" marginLeft="25%"/>
+                <Button name="Geri Git" backgroundColor="#EED2B1" color="#C08D50" marginTop="2%" marginLeft="25%" onClickFunction={() => history.push("/giris")}/>
+                <Button name="Onayla" backgroundColor="#3F72AF" color="#112D4E" marginTop="1%" marginLeft="25%" onClickFunction={() => history.push("/")}/>
                 
             </div>
         </div>

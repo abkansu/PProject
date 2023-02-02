@@ -3,7 +3,6 @@ import "./AnaSayfa.css";
 import { Link } from "react-router-dom";
 import { TbPhysotherapist } from "react-icons/tb";
 import { MdOutlineSick } from "react-icons/md";
-import { SiWorldhealthorganization } from "react-icons/si"
  
 
 const AnaSayfa = () => {
