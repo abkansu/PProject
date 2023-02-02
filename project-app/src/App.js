@@ -1,7 +1,7 @@
 import './App.css';
-import GirisSayfasi from './impingement/girisSayfasi/GirisSayfasi';
-import SemptomSayfasi from './impingement/semptomSayfasi/SemptomSayfasi';
-import AnaSayfa from './impingement/anaSayfa/AnaSayfa';
+import GirisSayfasi from './main/girisSayfasi/GirisSayfasi';
+import SemptomSayfasi from './main/semptomSayfasi/SemptomSayfasi';
+import AnaSayfa from './main/anaSayfa/AnaSayfa';
 import { Route, BrowserRouter as Router, Routes, Switch } from 'react-router-dom';
 
 function App() {
