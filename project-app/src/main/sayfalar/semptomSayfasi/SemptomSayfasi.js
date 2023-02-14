@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import Semptom from "./Semptom";
 import "./SemptomSayfasi.css";
 import MOCKDATA from "./MOCK_DATA.json";
-import Button from "../genel/buton/Button";
+import Button from "../../genel/buton/Button";
 import { useHistory } from "react-router-dom";
 
 const SemptomSayfasi = () =>{
@@ -37,9 +37,8 @@ const SemptomSayfasi = () =>{
                 
             </div>
             <div>
-                <Button name="Geri Git" backgroundColor="#EED2B1" color="#C08D50" marginTop="2%" marginLeft="25%" onClickFunction={() => history.push("/giris")}/>
-                <Button name="Onayla" backgroundColor="#3F72AF" color="#112D4E" marginTop="1%" marginLeft="25%" onClickFunction={() => history.push("/")}/>
-                
+                <Button name="Geri Git" style={{backgroundColor:"#EED2B1", color:"#C08D50", marginTop:"3%", marginLeft:"17.5%", float: "left"}} onClickFunction={() => history.goBack()}/>
+                <Button name="Onayla" style={{backgroundColor:"#3F72AF", color:"#112D4E", marginTop:"3%", marginLeft:"5%", float: "left"}} onClickFunction={() => history.push("/")}/>
             </div>
         </div>
         

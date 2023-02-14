@@ -1,13 +1,13 @@
 import React from "react";
-import "./GirisSayfasi.css";
-import Button from "../genel/buton/Button";
+import "./HastaGirisSayfasi.css";
+import Button from "../../genel/buton/Button";
 import { useHistory } from "react-router-dom";
 
 
 const GirisSayfasi = () => {
     const history = useHistory();
 
-    const checkIsNumber = (event) => {
+    const checkIsTckn = (event) => {
         const value = event.target.value
         const valueLength = value.length
         if(!+value[valueLength - 1] || valueLength > 11){
@@ -23,7 +23,6 @@ const GirisSayfasi = () => {
         }catch(e){
             event.target.value = ''
         }
-        
     }
 
     return (
@@ -45,11 +44,11 @@ const GirisSayfasi = () => {
                 <label>TC Kimlik No</label>
             </div>
             <div className="Input">
-                <input type={"text"} className="InputBox" onChange={checkIsNumber}/>
+                <input type={"text"} className="InputBox" onChange={checkIsTckn}/>
             </div>
             <div className="Input">
-                <Button name="Geri Git" backgroundColor="#EED2B1" color="#C08D50" marginTop="10%" marginLeft="25%" onClickFunction={() => history.push("/")}/>
-                <Button name="Onayla" backgroundColor="#3F72AF" color="#112D4E" marginTop="2%" marginLeft="25%" onClickFunction={() => history.push("/semptom")}/>
+                <Button name="Geri Git" style={{backgroundColor:"#EED2B1", color:"#C08D50", marginTop:"10%", marginLeft:"17.5%", float: "left"}}  onClickFunction={() => history.push("/")}/>
+                <Button name="Onayla" style={{backgroundColor:"#3F72AF", color:"#112D4E", marginTop:"10%", marginLeft:"5%", float: "left"}} onClickFunction={() => history.push("/semptom")}/>
             </div>
         </div>
     </div>

@@ -16,7 +16,7 @@ const AnaSayfa = () => {
             <div className="GirisButonlari">
                 <div className="GirisButonuFizyoterapist">
                     <TbPhysotherapist className="Fizyoterapist"/>
-                    <Link to="/" className="LinkButonu">Fizyoterapist Giriş</Link>
+                    <Link to="/login" className="LinkButonu">Fizyoterapist Giriş</Link>
                 </div>
                 <div className="GirisButonuHasta">
                     <MdOutlineSick className="Hasta"/>
