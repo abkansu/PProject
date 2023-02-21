@@ -3,7 +3,6 @@ import "./Button.css";
 
 const Button = (props) => {
     const { name, style, onClickFunction } = props
-    console.log(style)
 
     const onHoverOver = (e) => {
         e.target.style.backgroundColor = style.color;

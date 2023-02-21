@@ -9,9 +9,12 @@ const SemptomSayfasi = () =>{
     const history = useHistory();
     const [ searchTerm, setSearchTerm ] = useState("");
     const [ datalist, setDatalist ] = useState(MOCKDATA.map((value, key) => {return [value.first_name, false];}));
+    console.log("sayfa")
+    console.log(datalist)
     const onClickSemptom = (event) => {
+        console.log(event);
         setDatalist(current => current.map((value, key) => {
-            if (value[0] == (event.target.innerHTML)){
+            if (value[0] == (event.target.id)){
                 return [value[0], !value[1]];
             }else {
                 return value;
@@ -32,7 +35,7 @@ const SemptomSayfasi = () =>{
                         return value;
                     }
                 }).map((value, key) => {
-                    return <Semptom semptomIsmi={value[0]} isSelected={value[1]} onClick={onClickSemptom} key={value[0]}/>
+                    return <Semptom semptomIsmi={value[0]} isSelected={value[1]} onClick={onClickSemptom} key={value[0]} id={value[0]}/>
                 })}
                 
             </div>
