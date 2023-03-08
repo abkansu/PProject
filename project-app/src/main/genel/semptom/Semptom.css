@@ -1,0 +1,30 @@
+.Semptom{
+    height: 10%;
+    width: 98%;
+    background-color: #F9F7F7;
+    margin-top: 0%;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    border-width: 5px ;
+    border-bottom-style: groove;
+    scale: 1.0;
+    color: #112D4E;
+    padding-left: 2%;
+}
+
+.SemptomSelected{
+    height: 35%;
+    width: 98%;
+    background-color: #112D4E;
+    margin-top: 0%;
+    border-radius: 10px;
+    display: block;
+    align-items: center;
+    border-width: 5px ;
+    border-bottom-style: groove;
+    scale: 1.01;
+    color: #F9F7F7;
+    padding-left: 1%;
+    padding-top: 1%;
+}

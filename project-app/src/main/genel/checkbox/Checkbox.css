@@ -1,0 +1,36 @@
+.Checkbox{
+    margin-top: 1%;
+    display: flex;
+    align-items: center;
+}
+
+.Checkbox label{
+    cursor: pointer;
+    display: flex;
+    color: white;
+}
+
+.Checkbox input[type='checkbox']{
+    position: absolute;
+    cursor: pointer;
+    opacity: 0;
+}
+
+.Checkbox label::before{
+    content: '';
+    width: 1em;
+    height: 1em;
+    border-radius: 0.15em;
+    margin-right: 0.5em;
+    border: 0.05em solid white;
+    background-color: #F9F7F7;
+}
+
+.Checkbox input[type='checkbox']:checked + label::before{
+    content: '\002714';
+    background-color: #112D4E;
+    color: #F9F7F7;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

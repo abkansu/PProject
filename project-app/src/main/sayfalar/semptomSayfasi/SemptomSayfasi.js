@@ -1,7 +1,7 @@
 import React, { useState } from "react";
-import Semptom from "./Semptom";
+import Semptom from "../../genel/semptom/Semptom";
 import "./SemptomSayfasi.css";
-import MOCKDATA from "./MOCK_DATA.json";
+import MOCKDATA from "../../data/SEMPTOM_MOCK_DATA.json";
 import Button from "../../genel/buton/Button";
 import { useHistory } from "react-router-dom";
 
@@ -9,18 +9,25 @@ const SemptomSayfasi = () =>{
     const history = useHistory();
     const [ searchTerm, setSearchTerm ] = useState("");
     const [ datalist, setDatalist ] = useState(MOCKDATA.map((value, key) => {return [value.first_name, false];}));
-    console.log("sayfa")
-    console.log(datalist)
     const onClickSemptom = (event) => {
-        console.log(event);
         setDatalist(current => current.map((value, key) => {
-            if (value[0] == (event.target.id)){
-                return [value[0], !value[1]];
+            if (value[0] == (event.target.id) && value[1] == false){
+                return [value[0], !value[1]]; 
             }else {
                 return value;
             }}
         ).sort((a, b) => b[1] - a[1]));
     }
+    const onClickIptal = (event) => {
+            setDatalist(current => current.map((value, key) => {
+                if (value[0] == (event.target.offsetParent.id) && value[1] == true){
+                    return [value[0], !value[1]]; 
+                }else {
+                    return value;
+                }}
+            ).sort((a, b) => b[1] - a[1]));
+    }
+    
     return(
     <div className="SemptomSayfasi">
         <div className="SearchBar" >
@@ -35,7 +42,7 @@ const SemptomSayfasi = () =>{
                         return value;
                     }
                 }).map((value, key) => {
-                    return <Semptom semptomIsmi={value[0]} isSelected={value[1]} onClick={onClickSemptom} key={value[0]} id={value[0]}/>
+                    return <Semptom semptomIsmi={value[0]} isSelected={value[1]} onClick={onClickSemptom} onClickIptal={onClickIptal} key={value[0]} id={value[0]}/>
                 })}
                 
             </div>

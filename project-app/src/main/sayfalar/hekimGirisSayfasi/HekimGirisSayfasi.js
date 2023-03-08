@@ -31,7 +31,7 @@ const HekimGirisSayfasi = () => {
             </div>
             <div className="Input">
                 <Button name="Geri Git" style={{backgroundColor:"#EED2B1", color:"#C08D50", marginTop:"5%", marginLeft:"17.5%", float: "left"}}  onClickFunction={() => history.goBack()}/>
-                <Button name="Giriş Yap" style={{backgroundColor:"#3F72AF", color:"#112D4E", marginTop:"5%", marginLeft:"5%", float: "left"}} onClickFunction={() => history.push("/semptom")}/>
+                <Button name="Giriş Yap" style={{backgroundColor:"#3F72AF", color:"#112D4E", marginTop:"5%", marginLeft:"5%", float: "left"}} onClickFunction={() => history.push("/yeniHasta")}/>
             </div>
         </div>
     </div>

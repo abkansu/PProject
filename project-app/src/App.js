@@ -3,7 +3,8 @@ import HastaGirisSayfasi from './main/sayfalar/hastaGirisSayfasi/HastaGirisSayfa
 import SemptomSayfasi from './main/sayfalar/semptomSayfasi/SemptomSayfasi';
 import AnaSayfa from './main/sayfalar/anaSayfa/AnaSayfa';
 import HekimGirisSayfasi from './main/sayfalar/hekimGirisSayfasi/HekimGirisSayfasi';
-import { Route, BrowserRouter as Router, Routes, Switch } from 'react-router-dom';
+import YeniHastaSayfasi from './main/sayfalar/yeniHastaSayfasi/YeniHastaSayfasi';
+import { Route, BrowserRouter as Router, Switch } from 'react-router-dom';
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
         <Route exact path={"/giris"}> <HastaGirisSayfasi /></Route>
         <Route exact path={"/semptom"}> <SemptomSayfasi /></Route>
         <Route exact path={"/login"}> <HekimGirisSayfasi /></Route>
+        <Route exact path={"/yeniHasta"}> <YeniHastaSayfasi /></Route>
       </Switch>
       </div>
     </Router>

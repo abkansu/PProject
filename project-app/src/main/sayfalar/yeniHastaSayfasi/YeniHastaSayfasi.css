@@ -1,0 +1,9 @@
+.YeniHastaSayfasi{
+    height: 70%;
+    width: 70%;
+    background-color: #DBE2EF;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+}
