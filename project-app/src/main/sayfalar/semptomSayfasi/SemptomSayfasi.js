@@ -1,8 +1,8 @@
 import React, { useState } from "react";
-import Semptom from "../../genel/semptom/Semptom";
+import Semptom from "../../components/semptom/Semptom";
 import "./SemptomSayfasi.css";
 import MOCKDATA from "../../data/SEMPTOM_MOCK_DATA.json";
-import Button from "../../genel/buton/Button";
+import Button from "../../components/buton/Button";
 import { useHistory } from "react-router-dom";
 
 const SemptomSayfasi = () =>{
