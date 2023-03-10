@@ -14,7 +14,7 @@ const HekimGirisSayfasi = () => {
             <TextInputComponent label={"Tc Kimlik No"} onChange={checkIsTckn}/>
             <TextInputComponent label={"Şifre"} type={"password"}/>
             <Button name="Geri Git" style={{backgroundColor:"#EED2B1", color:"#C08D50", marginTop:"10%", marginLeft:"17.5%", float: "left"}}  onClickFunction={() => history.push("/")}/>
-            <Button name="Onayla" style={{backgroundColor:"#3F72AF", color:"#112D4E", marginTop:"10%", marginLeft:"5%", float: "left"}} onClickFunction={() => history.push("/semptom")}/>
+            <Button name="Onayla" style={{backgroundColor:"#3F72AF", color:"#112D4E", marginTop:"10%", marginLeft:"5%", float: "left"}} onClickFunction={() => history.push("/yeniHasta")}/>
         </ViewComponent>
     );
 }

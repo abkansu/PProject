@@ -1,0 +1,39 @@
+.InputRange{
+    margin-top: 0.2%;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+.InputLabelRange{
+    margin-top: 3%;
+}
+
+.InputBoxRange{
+    appearance: none;
+    width: 80%;
+    background: white;
+    float: left;
+    border-radius: 15px;
+}
+
+
+.RangeValue{
+    margin-left: 5%;
+    margin-top: 0.1%;
+    width: 50%;
+    float: right;
+    height: 30px;
+    border: 2px solid black;
+    border-radius: 10px;
+    display: block;
+    font: 16px 'Montserrat', sans-serif;
+    color: #3F72AF;
+}
+
+label{
+    color: #112D4E;
+    margin-left: 1%;
+    font-weight: bold;
+    width: 30%;
+}

@@ -1,0 +1,17 @@
+.InputEnum{
+    margin-top: 0.2%;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+.InputLabelEnum{
+    margin-top: 3%;
+}
+
+.EnumValue{
+    float: left;
+    width: 100%;
+    font: 16px 'Montserrat', sans-serif;
+    color: #3F72AF;
+}

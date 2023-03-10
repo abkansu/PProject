@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import Semptom from "../../components/semptom/Semptom";
 import "./SemptomSayfasi.css";
-import MOCKDATA from "../../data/SEMPTOM_MOCK_DATA.json";
+import MOCKDATA from "../../genel/data/SEMPTOM_MOCK_DATA.json";
 import Button from "../../components/buton/Button";
 import { useHistory } from "react-router-dom";
 
