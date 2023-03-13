@@ -5,7 +5,7 @@ import AnaSayfa from './main/sayfalar/anaSayfa/AnaSayfa';
 import HekimGirisSayfasi from './main/sayfalar/hekimGirisSayfasi/HekimGirisSayfasi';
 import YeniHastaSayfasi from './main/sayfalar/yeniHastaSayfasi/YeniHastaSayfasi';
 import { Route, BrowserRouter as Router, Switch, Redirect } from 'react-router-dom';
-import HastaListele from './main/sayfalar/hastaListele/HastaListele';
+import HastaListeleSayfasi from './main/sayfalar/hastaListelesayfasi/HastaListeleSayfasi';
 import HekimIlkSayfa from './main/sayfalar/hekimIlkSayfa/HekimIlkSayfa';
 
 function App() {
@@ -18,7 +18,7 @@ function App() {
         <Route exact path={"/semptom"}> <SemptomSayfasi /></Route>
         <Route exact path={"/login"}> <HekimGirisSayfasi /></Route>
         <Route exact path={"/yeniHasta"}> <YeniHastaSayfasi /></Route>
-        <Route exact path={"/hastaListele"}> <HastaListele /></Route>
+        <Route exact path={"/hastaListele"}> <HastaListeleSayfasi /></Route>
         <Route exact path={"/hekimIlkSayfa"}> <HekimIlkSayfa /></Route>
         <Redirect to={"/"}/>
       </Switch>

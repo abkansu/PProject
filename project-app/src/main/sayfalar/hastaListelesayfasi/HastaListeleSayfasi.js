@@ -1,12 +1,12 @@
 import React, { useState } from "react";
-import "./HastaListele.css"
+import "./HastaListeleSayfasi.css"
 import MOCKDATA from "../../genel/data/HASTA_MOCK_DATA.json";
 import Hasta from "../../components/hasta/Hasta";
 import { useHistory } from "react-router-dom";
 import Button from "../../components/buton/Button";
 
 
-const HastaListele = () => {
+const HastaListeleSayfasi = () => {
     const [ searchTerm, setSearchTerm ] = useState("");
     const history = useHistory()
     return (
@@ -28,4 +28,4 @@ const HastaListele = () => {
     );
 }
 
-export default HastaListele;
+export default HastaListeleSayfasi;

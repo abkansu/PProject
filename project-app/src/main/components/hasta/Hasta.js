@@ -1,5 +1,6 @@
 import React from "react";
 import "./Hasta.css"
+import { FaArrowRight } from "react-icons/fa";
 
 const Hasta = (props) => {
     const { hasta } = props
@@ -18,6 +19,9 @@ const Hasta = (props) => {
             <div className="OzellikIsmi">Telefon: </div>
             <div>{telefon}</div>
         </div>
+        <div className="IleriButonu">
+            <FaArrowRight style={{fontSize: "26px"}}/>
+        </div>
         <div className="Ozellik">
             <div className="OzellikIsmi">Cinsiyet: </div>
             <div>{gender == "Female" ? "Kadın" : "Erkek"}</div>
@@ -34,6 +38,19 @@ const Hasta = (props) => {
             <div className="OzellikIsmi">Kilo: </div>
             <div>{kilo}</div>
         </div>
+        <div className="Ozellik">
+            <div className="OzellikIsmi">BMI: </div>
+            <div>{(kilo / ((boy / 100) ** 2)).toFixed(2)}</div>
+        </div>
+        {/**
+         * TODO: Buton sağa yaslanacak ve dikey olacak
+         * 
+         *  <div className="Ozellik">
+                <Button name="Detayları incele" style={{backgroundColor:"#3F72AF", color:"#112D4E", marginTop:"0%", marginLeft:"0%", width: "80%", height: "100%", float: "left"}} onClickFunction={(event) => console.log(event)}/>
+            </div>
+         */}
+        
+        
     </div>
     );
 }
