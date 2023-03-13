@@ -18,7 +18,8 @@
     height: 30px;
     border: 2px solid black;
     border-radius: 10px;
-    font: 16px "Helvetica", "Arial", "sans-serif";
+    font-size: 16px;
+    font-family: 'Montserrat', sans-serif;
 }
 
 .Semptomlar{

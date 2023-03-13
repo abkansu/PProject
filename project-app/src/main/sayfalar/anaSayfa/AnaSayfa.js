@@ -19,7 +19,7 @@ const AnaSayfa = () => {
                     <Link to="/login" className="LinkButonu">Fizyoterapist Giriş</Link>
                 </div>
                 <div className="GirisButonuHasta">
-                    <MdOutlineSick className="Hasta"/>
+                    <MdOutlineSick className="HastaLogo"/>
                     <Link to="/giris" className="LinkButonu">Hasta Giriş</Link>
                 </div>
             </div>

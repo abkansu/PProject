@@ -1,0 +1,48 @@
+.HekimIlkSayfa{
+    height: 70%;
+    width: 70%;
+    background-color: #DBE2EF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+}
+
+.Info{
+    float:right;
+    width: 50%;
+}
+
+.InfoText{
+    float:right;
+    margin-right: 5%;
+    font-weight: bold;
+}
+
+.Secenekler{
+    width: 50%;
+    border-left-width: 2px;
+    border-left-color: gray;
+    border-left-style: solid;
+    height: 30%;
+}
+
+.Secenek{
+    margin: 1.5% 5%;
+    color: #112D4E;
+}
+
+.Ilk{
+    margin-top: 3%;
+}
+
+.Secenek:hover{
+    margin: 1.5% 5%;
+    cursor: pointer;
+    color: #3F72AF;
+    scale: 1.02;
+}
+
+.Cikis:hover{
+    color: red;
+}

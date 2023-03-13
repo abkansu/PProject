@@ -1,0 +1,19 @@
+.HastaListele{
+    height: 70%;
+    width: 70%;
+    background-color: #DBE2EF;
+    border-radius: 10px;
+    overflow-y: hidden;
+}
+
+.SearchHasta{
+    width: 71%;
+    height: 30px;
+    border: 2px solid black;
+    border-radius: 10px;
+    margin-left: 15%;
+    margin-bottom: 1%;
+    margin-top: 1%;
+    padding-left: 1%;
+    font-family: 'Montserrat', sans-serif;
+}

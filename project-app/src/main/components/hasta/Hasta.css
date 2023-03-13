@@ -1,0 +1,27 @@
+.Hasta{
+    height: 30%;
+    width: 70%;
+    background-color: #F9F7F7;
+    margin-top: 0.5%;
+    border-radius: 10px;
+    border-width: 5px ;
+    border-bottom-style: groove;
+    scale: 1.0;
+    color: #112D4E;
+    padding-left: 2%;
+    padding-top: 2%;
+    margin-left: 15%;
+}
+
+.Ozellik{
+    font-size: 16px;
+    font-weight: bold;
+    width: 30%;
+    height: 30%;
+    float: left;
+}
+.OzellikIsmi{
+    font-size: 15px;
+    font-weight: lighter;
+}
+
