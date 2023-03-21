@@ -7,6 +7,7 @@ import YeniHastaSayfasi from './main/sayfalar/yeniHastaSayfasi/YeniHastaSayfasi'
 import { Route, BrowserRouter as Router, Switch, Redirect } from 'react-router-dom';
 import HastaListeleSayfasi from './main/sayfalar/hastaListelesayfasi/HastaListeleSayfasi';
 import HekimIlkSayfa from './main/sayfalar/hekimIlkSayfa/HekimIlkSayfa';
+import BolgeSayfasi from './main/sayfalar/bolgeSayfasi/BolgeSayfasi';
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
         <Route exact path={"/yeniHasta"}> <YeniHastaSayfasi /></Route>
         <Route exact path={"/hastaListele"}> <HastaListeleSayfasi /></Route>
         <Route exact path={"/hekimIlkSayfa"}> <HekimIlkSayfa /></Route>
+        <Route exact path={"/bolgeSayfasi"}> <BolgeSayfasi /></Route>
         <Redirect to={"/"}/>
       </Switch>
       </div>

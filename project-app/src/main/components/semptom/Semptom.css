@@ -1,30 +1,33 @@
 .Semptom{
     height: 10%;
-    width: 98%;
     background-color: #F9F7F7;
     margin-top: 0%;
-    border-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
     display: flex;
     align-items: center;
-    border-width: 5px ;
-    border-bottom-style: groove;
-    scale: 1.0;
-    color: #112D4E;
+    border-width: 1px ;
+    border-style: solid;
+    color: #3F72AF;
     padding-left: 2%;
+    direction: ltr;
+}
+.Semptom:hover{
+    cursor: pointer;
 }
 
 .SemptomSelected{
     height: 35%;
-    width: 98%;
     background-color: #112D4E;
     margin-top: 0%;
-    border-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
     display: block;
     align-items: center;
-    border-width: 5px ;
-    border-bottom-style: groove;
-    scale: 1.01;
+    border-width: 1px ;
+    border-style: solid;
     color: #F9F7F7;
     padding-left: 1%;
     padding-top: 1%;
+    direction: ltr;
 }

@@ -19,13 +19,14 @@ const SemptomSayfasi = () =>{
         ).sort((a, b) => b[1] - a[1]));
     }
     const onClickIptal = (event) => {
-            setDatalist(current => current.map((value, key) => {
-                if (value[0] == (event.target.offsetParent.id) && value[1] == true){
-                    return [value[0], !value[1]]; 
-                }else {
-                    return value;
-                }}
-            ).sort((a, b) => b[1] - a[1]));
+        console.log(event);
+        setDatalist(current => current.map((value, key) => {
+            if (value[0] == (event.target.parentElement.id) && value[1] == true){
+                return [value[0], !value[1]]; 
+            }else {
+                return value;
+            }}
+        ).sort((a, b) => b[1] - a[1]));
     }
     
     return(
